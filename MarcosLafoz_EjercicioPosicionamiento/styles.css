@@ -15,8 +15,10 @@ body {
 
 /*Letrero*/
 #titulo {
-	font-size: 20rem;
+	font-size: 30rem;
 	color: white;
+	font-weight: bold;
+	margin-bottom: 20rem;
 }
 
 /*Contenedor frutas*/
@@ -25,15 +27,18 @@ body {
 }
 
 #melocoton {
-	position: absolute
+	position: relative; 
 }
 
 #naranja {
-	position: absolute
+	position: relative;
+	
 }
 
 #pera {
-	position: absolute;
+	position: relative;
+	margin-left: 60%;
+	margin-top: 30rem;
 }
 
 /*Nombre*/
