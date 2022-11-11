@@ -1,0 +1,49 @@
+/*Plantilla Marcos Lafoz*/
+
+* {
+	margin: 0rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1px;
+}
+
+body {
+	color: black;
+	background-color: #7E3FFF;
+}
+
+/*Estilos*/
+
+/*Letrero*/
+#titulo {
+	font-size: 20rem;
+	color: white;
+}
+
+/*Contenedor frutas*/
+#manzana {
+	position: absolute;
+}
+
+#melocoton {
+	position: absolute
+}
+
+#naranja {
+	position: absolute
+}
+
+#pera {
+	position: absolute;
+}
+
+/*Nombre*/
+#nombre {
+	background-color: rgba(0, 0, 0, 0.411);
+	width: 200rem;
+	height: 180rem;
+}
+
+#textonombre {
+	font-size: 10rem;
+	color: white;
+}
