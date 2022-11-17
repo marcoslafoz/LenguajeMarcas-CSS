@@ -14,7 +14,7 @@ body {
 /*Estilos*/
 
 /*Letrero*/
-#titulo {
+.titulo {
 	font-size: 30rem;
 	color: white;
 	font-weight: bold;
@@ -23,30 +23,21 @@ body {
 
 /*Contenedor frutas*/
 #manzana {
-	position: absolute;
+	float: left;
 }
 
-#melocoton {
-	position: relative; 
-}
+#melocoton {float: left;}
 
+#naranja {float: left;}
 
-#naranja {
-	position: relative;
-	
-}
-
-#pera {
-	position: relative;
-	margin-left: 60%;
-	margin-top: 30rem;
-}
+#pera {float: left;}
 
 /*Nombre*/
 #nombre {
 	background-color: rgba(0, 0, 0, 0.411);
 	width: 200rem;
 	height: 180rem;
+	float: left;
 }
 
 #textonombre {
