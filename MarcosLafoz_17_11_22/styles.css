@@ -1,0 +1,80 @@
+/*Plantilla Marcos Lafoz*/
+
+* {
+	margin: 0rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1px;
+}
+
+body {
+	color: black;
+	background-color: white;
+}
+
+/*Estilos*/
+
+/*Cabecera*/
+#cabecera {
+	width: 100%;
+	height: 100rem;
+	background-color: rgba(79, 79, 79, 0.3);
+	font-size: 30rem;
+}
+
+/*Nav*/
+#navegador {
+	width: 100%;
+	height: 100rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 30rem;
+}
+
+.titulos {
+	padding-top: 30rem;
+	font-size: 30rem;
+}
+
+/*Seccion*/
+#seccion {
+	background-color: aqua;
+	width: 70%;
+	float: left;
+}
+
+/*Pie*/
+#pie {
+	width: 100%;
+	height: 100rem;
+	background-color: rgb(60, 0, 255);
+	position: absolute;
+	bottom: 0rem;
+}
+
+/*Laterales*/
+#lat_izq {
+	width: 15%;
+	background-color: red;
+	float: left;
+}
+
+#lat_der {
+	width: 15%;
+	background-color: red;
+	float: left;
+}
+
+.contenido {
+	height: 630rem;
+}
+
+#contenido1 {
+	background-color: bisque;
+	float: right;
+	width: 300rem;
+}
+
+#contenido2 {
+	background-color: rgb(209, 255, 196);
+	float: left;
+	width: 1032rem;
+}
