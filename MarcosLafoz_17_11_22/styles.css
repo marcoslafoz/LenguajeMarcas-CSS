@@ -79,6 +79,40 @@ body {
 	width: 70%;
 }
 
+/*Articulos*/
+
+#contart{
+	width: 80%;
+	height: 60%;
+	background-color: transparent;
+	margin-top: 50rem;
+	
+}
+
+.articulo{
+	width: 30%;
+	height: 95%;
+	background-color: rgb(65, 65, 65);
+	float: left;
+	margin:12rem;
+	border-radius: 30rem;
+}
+
+.descripcion{
+	border-radius: 30rem;
+	margin-top: 10%;
+	width: 80%;
+	height: 23%;
+	background-color: rgb(199, 199, 199);
+}
+
+#fotoarticulo{
+	border-radius: 30rem;
+	margin-top: 10%;
+	width: 80%;
+	height: 60%;
+}
+
 /*Barra desplazamiento*/
 /* Works on Firefox */
 * {
@@ -92,7 +126,7 @@ body {
   }
   
   *::-webkit-scrollbar-track {
-	background: rgba(0, 0, 0, 0)
+	background: transparent
   }	
   
   *::-webkit-scrollbar-thumb {
