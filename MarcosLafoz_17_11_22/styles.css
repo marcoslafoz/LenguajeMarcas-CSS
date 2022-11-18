@@ -8,7 +8,7 @@
 
 body {
 	color: black;
-	background-color: white;
+	background-color: white;    
 }
 
 /*Estilos*/
@@ -47,7 +47,7 @@ body {
 	height: 100rem;
 	background-color: rgb(158, 158, 158);
 	position: absolute;
-	bottom: 0rem;
+	bottom: -22rem;
 }
 
 /*Laterales*/
@@ -64,7 +64,7 @@ body {
 }
 
 .contenido {
-	height: 700rem;
+	height: 750rem;
 }
 
 #contenido1 {
@@ -79,7 +79,23 @@ body {
 	width: 70%;
 }
 
-#foto1{
-	margin-top:100rem;
+/*Barra desplazamiento*/
+/* Works on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(100, 100, 100) rgba(0, 0, 0, 0);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+	width: 11rem;
+  }
+  
+  *::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0)
+  }	
+  
+  *::-webkit-scrollbar-thumb {
+	background-color: rgb(99, 99, 99);
 	border-radius: 20rem;
-}
+  }
