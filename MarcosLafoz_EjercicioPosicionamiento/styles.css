@@ -24,13 +24,32 @@ body {
 /*Contenedor frutas*/
 #manzana {
 	float: left;
+	margin-top: 50px;
 }
 
-#melocoton {float: left;}
+#melocoton {
+	float: left;
+	margin-top: 320px;
+	margin-left: 100px;
+	position: absolute;
 
-#naranja {float: left;}
+}
 
-#pera {float: left;}
+#titulomelocoton {
+	display: none;
+}
+
+#naranja {
+	float: left;
+	margin-left: 100px;
+}
+
+#pera {
+	float: left;
+	position: absolute;
+	margin-top: 330px;
+	margin-left: 500px;
+}
 
 /*Nombre*/
 #nombre {
@@ -38,6 +57,8 @@ body {
 	width: 200rem;
 	height: 180rem;
 	float: left;
+	position: fixed;
+	margin-top: 650px;
 }
 
 #textonombre {
