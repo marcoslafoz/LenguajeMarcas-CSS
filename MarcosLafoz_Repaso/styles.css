@@ -86,5 +86,18 @@ body {
 	border-style: solid;
 	width: 70px;
 	padding: 5px;
+}
+
+.boton2{
 	margin-top: 50px;
 }
+
+
+
+a:hover{
+	background-color: #08C6AA;
+	border-style: none;
+	color: white;
+}
+
+a{text-decoration: none;}
