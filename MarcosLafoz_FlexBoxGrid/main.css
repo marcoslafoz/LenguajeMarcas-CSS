@@ -12,7 +12,10 @@ hr {
     border: 1px solid #eee;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Lusitana', serif;
 }
 
@@ -36,8 +39,14 @@ h1, h2, h3, h4 {
 
 /*Modificado*/
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
 }
 
+@media only screen and (max-width: 780px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
