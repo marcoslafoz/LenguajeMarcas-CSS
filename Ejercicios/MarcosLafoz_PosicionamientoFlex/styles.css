@@ -1,0 +1,23 @@
+
+.container1{
+    display: flex;
+    flex-direction: row;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+
+.cont1{
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 318px;
+    
+}
+
+.cont2{
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 20px;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lusitana|Open+Sans');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body img {
+    border-radius: 4px;
+}
+
+hr {
+    border: 1px solid #eee;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lusitana', serif;
+}
+
+.header {
+    margin-bottom: 17px;
+}
+
+
+.jumbotron {
+    padding: 17px;
+    margin: 0 17px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.panel {
+    border: 1px solid #eee;
+    padding: 7px;
+    margin: 11px 17px;
+}
+
+/*Modificado*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 780px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}

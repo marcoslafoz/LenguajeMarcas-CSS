@@ -1,0 +1,66 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+section,
+nav {
+	background-color: #444;
+	color: #fff;
+	/* Cambiamos el color de texto para que contraste con el fondo*/
+}
+
+header,
+footer {
+	background-color: #999;
+}
+
+aside {
+	background-color: #ccc;
+}
+
+header,
+footer,
+nav,
+aside,
+section {
+	border-radius: 5px;
+	padding: 10px;
+}
+
+
+/*P2*/
+nav {
+	grid-area: nav;
+}
+
+aside {
+	grid-area: aside;
+}
+
+section {
+	grid-area: section;
+}
+
+header {
+	grid-area: header;
+}
+
+footer {
+	grid-area: footer;
+}
+
+main {
+	display: grid;
+	grid-gap: 0.3em;
+	/* Dejo separación entre las celdas */
+	/* Genera una rejilla de 3 filas x 4 columnas */
+	
+}
+
+/*P3*/
+main {
+	grid-template-areas:
+		"header header header header header"
+		"nav nav section section aside"
+		"footer footer footer footer footer";
+}
