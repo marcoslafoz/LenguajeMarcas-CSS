@@ -84,7 +84,7 @@ html {
 
 #contenido {
 	width: 100rem;
-	height: 70rem;
+	height: 62rem;
 	color: rgb(0, 0, 0);
 	font-size: 2.5rem;
 	padding-top: 3rem;
@@ -247,8 +247,6 @@ body::-webkit-scrollbar-thumb {
 .card-inner {
 	width: inherit;
 	height: inherit;
-
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 	backdrop-filter: blur(0px);
 	border-radius: 0.8rem;
 }
@@ -273,9 +271,9 @@ body::-webkit-scrollbar-thumb {
 	background-size: 100%;
 }
 
-#staf_card {
-	background-image: url(files/staf.png);
-	background-size: 100%;
+#yt_frame {
+	padding-top: 5.5rem;
+	border-radius: 1.5rem;
 }
 
 .card:hover {
@@ -311,11 +309,78 @@ body::-webkit-scrollbar-thumb {
 .card-inner2 {
 	width: inherit;
 	height: inherit;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 	backdrop-filter: blur(0px);
 	border-radius: 0.8rem;
 }
 
 .card2:hover {
 	transform: scale(1.0) rotate(2deg);
+}
+
+/*Tarjeta Marcos*/
+.flip-card {
+	background-color: transparent;
+	width: 30rem;
+	height: 25rem;
+	perspective: 100rem;
+	font-family: sans-serif;
+	margin-top: 6rem;
+}
+
+.titlecard {
+	font-size: 3rem;
+	font-weight: 900;
+	text-align: center;
+	margin: 0;
+	font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.pcard{
+	font-size: 2rem;
+	font-weight: 900;
+	text-align: center;
+	margin: 0;
+	font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+	box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border: 1px solid transparent;
+	border-radius: 1rem;
+}
+
+.flip-card-front {
+	background-color: #FAB60A;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.flip-card-back {
+	background-image: url(files/fondo.png);
+	background-size: 150%;
+	background-color: white;
+	color: black;
+	transform: rotateY(180deg);
 }
