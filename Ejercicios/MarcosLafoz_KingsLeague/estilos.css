@@ -52,7 +52,7 @@ html {
 #linkText {
 	width: 100%;
 	/*font-family: 'Montserrat', sans-serif;*/
-	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: WHITE;
 }
 
@@ -70,6 +70,10 @@ html {
 
 #logo {
 	width: 100%;
+	/*    
+	height: 10rem;
+    margin-top: 0.5rem;
+	*/
 }
 
 #logo_landscape {
@@ -247,7 +251,6 @@ body::-webkit-scrollbar-thumb {
 .card-inner {
 	width: inherit;
 	height: inherit;
-	backdrop-filter: blur(0px);
 	border-radius: 0.8rem;
 }
 
@@ -309,7 +312,6 @@ body::-webkit-scrollbar-thumb {
 .card-inner2 {
 	width: inherit;
 	height: inherit;
-	backdrop-filter: blur(0px);
 	border-radius: 0.8rem;
 }
 
@@ -335,7 +337,7 @@ body::-webkit-scrollbar-thumb {
 	font-family: 'Annie Use Your Telescope', cursive;
 }
 
-.pcard{
+.pcard {
 	font-size: 2rem;
 	font-weight: 900;
 	text-align: center;
@@ -372,6 +374,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .flip-card-front {
+	background-image: url(files/post_it.png);
+	background-size: 100%;
 	background-color: #FAB60A;
 	color: black;
 	font-family: 'Montserrat', sans-serif;
@@ -383,4 +387,58 @@ body::-webkit-scrollbar-thumb {
 	background-color: white;
 	color: black;
 	transform: rotateY(180deg);
+}
+
+/*Reglamento*/
+.reglamento_cont {
+	background-image: url(files/fondo_rules.png);
+	background-size: 100%;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	font-family: 'Archivo', sans-serif;
+	padding-top: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border-style: solid;
+	border-radius: 20px;
+	border-color: transparent;
+}
+
+#lista {
+	font-size: 1.7rem;
+	text-align: left;
+	line-height: 3rem;
+	list-style: none;
+}
+
+#reglamento_text {
+	font-size: 2rem;
+	text-align: center;
+	width: 80%;
+}
+
+#sublist {
+	padding-right: 2rem;
+	font-size: 1.5rem;
+	list-style: none;
+}
+
+.num_list {
+	font-size: 2rem;
+	font-weight: 500;
+	color: #FAB60A;
+}
+
+.num_list2 {
+	font-size: 1.7rem;
+	font-weight: 500;
+	color: #FAB60A;
+}
+
+/*Clasificacion*/
+
+.standings_cont {
+	width: 100%;
+	height: 100%;
 }
