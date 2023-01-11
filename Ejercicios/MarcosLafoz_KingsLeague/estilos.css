@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
 /*Default*/
 * {
 	margin: 0rem;
@@ -46,34 +50,25 @@ html {
 	background-color: rgba(0, 0, 0, 0);
 	font-size: 1.2rem;
 	float: left;
-	padding-top: 0.25rem;
+	padding-top: 0.5rem;
+	text-transform: uppercase;
 }
 
 #linkText {
 	width: 100%;
-	/*font-family: 'Montserrat', sans-serif;*/
-	font-family: 'Montserrat', sans-serif;
-	color: WHITE;
+	font-family: 'Unbounded', cursive;
+	color: rgba(255, 255, 255, 0.8);
 }
 
 /*Bar*/
 
 #bar {
 	width: 100%;
-	height: 2rem;
+	height: 2.5rem;
 	background-color: black;
 	color: white;
-
-}
-
-/*Logo*/
-
-#logo {
-	width: 100%;
-	/*    
-	height: 10rem;
-    margin-top: 0.5rem;
-	*/
+	box-shadow: 15px 15px 30px #1f1f1fa4,
+		-15px -15px 30px #000000a4;
 }
 
 #logo_landscape {
@@ -169,7 +164,6 @@ main {
 }
 
 #footerContent {
-	font-family: 'Montserrat', sans-serif;
 	color: #FAB60A;
 	width: 66%;
 	height: 5rem;
@@ -406,16 +400,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 #lista {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	text-align: left;
 	line-height: 3rem;
 	list-style: none;
 }
 
 #reglamento_text {
-	font-size: 2rem;
+	font-size: 1.7rem;
 	text-align: center;
-	width: 80%;
+	width: 83%;
 }
 
 #sublist {
@@ -426,13 +420,13 @@ body::-webkit-scrollbar-thumb {
 
 .num_list {
 	font-size: 2rem;
-	font-weight: 500;
+	font-weight: 900;
 	color: #FAB60A;
 }
 
 .num_list2 {
-	font-size: 1.7rem;
-	font-weight: 500;
+	font-size: 1.5rem;
+	font-weight: 900;
 	color: #FAB60A;
 }
 
@@ -441,4 +435,118 @@ body::-webkit-scrollbar-thumb {
 .standings_cont {
 	width: 100%;
 	height: 100%;
+}
+
+/*Contacto*/
+
+input {
+	margin-top: 2rem;
+	text-align: center;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+#topin {
+	margin-top: 3rem;
+}
+
+#titulo {
+	margin-top: 2rem;
+	font-family: 'Archivo', sans-serif;
+}
+
+#etiquetas {
+	margin-right: 2rem;
+}
+
+/* From uiverse.io by @adamgiebl */
+button {
+	font-family: 'Archivo', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	background: #FAB60A;
+	color: white;
+	padding: 0.7em 1em;
+	padding-left: 0.9em;
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 16px;
+	overflow: hidden;
+	transition: all 0.2s;
+}
+
+button span {
+	display: block;
+	margin-left: 0.3em;
+	transition: all 0.3s ease-in-out;
+}
+
+button svg {
+	display: block;
+	transform-origin: center center;
+	transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+	animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+	transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+	transform: translateX(5em);
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+	from {
+		transform: translateY(0.1em);
+	}
+
+	to {
+		transform: translateY(-0.1em);
+	}
+}
+
+#enviar {
+	margin-top: 35px;
+}
+
+.card_contacto {
+	width: 50%;
+	height: 90%;
+	border-radius: 2rem;
+	background-image: url(files/fondo_contacto.png);
+	background-size: 100%;
+	background-color: white;
+	box-shadow: 15px 15px 30px #1f1f1f79,
+		-15px -15px 30px #00000079;
+	padding-bottom: -3rem;
+	padding-top: 1rem;
+	margin-top: 3rem;
+}
+
+.input_conts {
+	width: 50%;
+	font-family: 'Archivo', sans-serif;
+}
+
+.input_conts2 {
+	width: 52.6%;
+	height: 10rem;
+	font-family: 'Archivo', sans-serif;
+}
+
+#descripcion_contacto {
+	font-family: 'Archivo', sans-serif;
+	font-size: 1.15rem;
+	margin-top: 2rem;
+	width: 55%;
 }

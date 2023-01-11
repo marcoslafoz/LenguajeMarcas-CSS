@@ -3,30 +3,29 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Kings League | Noticias</title>
+	<title>Kings League | Contacto</title>
 	<meta name="Description" content="Kings League" />
 	<link rel="stylesheet" type="text/css" href="estilos.css" />
 	<link rel="shortcut icon" href="files/favicon.png">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300&display=swap');
-		@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
-	</style>
 </head>
 
 <body>
 	<div>
 		<div id="headerSticky">
+
 			<!--Header-->
 			<center>
 				<div id="header">
 					<div id="logo_landscape"><img src="files/KL_landscape.svg"></div>
 					<center>
 						<a href="index.html">
-							<div id="logo"><img src="files/logo-oficial.svg"></div>
+							<div id="logo"><img src="files/logo-oficial.svg" style="height: 10rem; margin-top: 0.5rem;">
+							</div>
 						</a>
 					</center>
 				</div>
 			</center>
+
 			<!--Barra-->
 			<center>
 				<div id="bar">
@@ -42,7 +41,7 @@
 					</a>
 					<a href="clasificacion.html">
 						<div id="link1">
-							<div id="linkText">Clasificacion</div>
+							<div id="linkText">Clasificación</div>
 						</div>
 					</a>
 					<a href="contacto.html">
@@ -57,50 +56,42 @@
 		<!--Contenido-->
 		<center>
 			<div id="contenido">
-				<div class="grid">
-					<div class="card">
-						<div class="card-inner" id="mvp_card"></div>
-					</div>
-					<div class="card">
-						<div class="card-inner" id="ht_card"></div>
-					</div>
-					<div class="card">
-						<div class="card-inner" id="ass2_card"></div>
-					</div>
-				</div>
-
-				<div class="grid2">
-					<div class="card2">
-						<div class="card-inner2" id="standings_card"></div>
-					</div>
-					<div class="card2">
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<p class="titlecard">Marcos Lafoz</p>
-									<p class="pcard">1ºDAM<br>Hover Me</p>
+				<div class="card_contacto">
+					<center>
+						<form action="https://httpbin.org/get" method="get">
+							<label>
+								<p id="titulo">Contactanos</p>
+							</label>
+							<p id="descripcion_contacto">Contactanos a traves de este formulario para participar en la
+								Kings League o para cualquier duda o problema que tengas.</p>
+							<input class="input_conts" type="email" id="topin" placeholder="Email" autofocus><br>
+							<input class="input_conts" type="text" placeholder="Nombre y apellidos"><br>
+							<input class="input_conts" type="tel" placeholder="Teléfono"><br>
+							<input class="input_conts2" type="text" placeholder="Mensaje"><br>
+							<button type="submit" id="enviar">
+								<div class="svg-wrapper-1">
+									<div class="svg-wrapper">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+											height="24">
+											<path fill="none" d="M0 0h24v24H0z"></path>
+											<path fill="currentColor"
+												d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+											</path>
+										</svg>
+									</div>
 								</div>
-								<div class="flip-card-back">
-									<p class="titlecard">Kings League Web</p>
-									<p class="pcard">Página Web de la liga de fútbol
-										<br>"Kings League"<br>Datos sacados de
-										<a href="https://kingsleague.pro/" target="_blank">kingsleague.pro</a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
+								<span>Enviar</span>
+							</button>
+						</form>
+					</center>
 				</div>
 			</div>
-
 		</center>
 
 		<!--Pie-->
 		<div id="footer">
 			<center>
 				<img src="files/footer.png" id="footerImg" alt="">
-				<!--<div id="footerContent">Footer</div>-->
 			</center>
 		</div>
 	</div>
