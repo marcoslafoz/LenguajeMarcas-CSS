@@ -29,8 +29,6 @@ la sección inferior en una cuadrícula de 2x2.-->
         html,
         body {
             height: 100%;
-            margin: 0;
-            padding: 0;
         }
 
         .contenedor {
@@ -51,21 +49,28 @@ la sección inferior en una cuadrícula de 2x2.-->
 
         .seccion2 {
             width: 100%;
+            height: 100%;
             flex: 1;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-gap: 10px;
             padding: 20px;
+            background-color: rgba(127, 255, 212, 0.419);
+        }
+
+        .cuadricula {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
         }
 
         .item {
-            background-color: #ccc;
-            border: 1px solid #999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
+            background-color: #ff840062;
+            padding: 10px;
+            font-size: 24px;
+            text-align: center;
         }
     </style>
 </body>
