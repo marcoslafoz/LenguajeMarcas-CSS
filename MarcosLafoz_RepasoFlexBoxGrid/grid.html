@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Repaso Flexbox</title>
+</head>
+
+<!--2. Ejercicio de Grid: Crea una cuadrícula de 3x3 con elementos de 100px de ancho y alto. Utiliza Grid para
+alinear los elementos en la página y asegúrate de que la cuadrícula se vea bien en pantallas de
+diferentes tamaños. Además, haz que el elemento central tenga un fondo diferente al de los otros
+elementos.-->
+
+<body>
+    <div class="cuadricula">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item central">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+    
+    <style>
+        .cuadricula {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            grid-gap: 10px;
+        }
+
+        .item {
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            font-size: 100px;
+            color: rgb(0, 0, 0, 0.1);
+        }
+
+        .central {
+            filter: invert(1);
+        }
+    </style>
+</body>
+
+</html>

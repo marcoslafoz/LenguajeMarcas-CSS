@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Repaso Flexbox</title>
+</head>
+
+<!--1. Ejercicio de Flexbox: Crea una lista de elementos de 5 columnas y 2 filas. Cada elemento de la lista debe
+tener un ancho fijo de 150px y una altura de 100px. Utiliza Flexbox para alinear los elementos en la
+página y asegúrate de que la lista se vea bien en pantallas de diferentes tamaños.-->
+
+<body>
+    <div class="lista">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <style>
+        .lista {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: last baseline;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .item {
+            background-color: aquamarine;
+            width: 150px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+            text-align: center;
+            color: black;
+        }
+    </style>
+</body>
+
+</html>
