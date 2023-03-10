@@ -51,12 +51,8 @@ la sección inferior en una cuadrícula de 2x2.-->
             width: 100%;
             height: 100%;
             flex: 1;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
             grid-gap: 10px;
-            padding: 20px;
-            background-color: rgba(127, 255, 212, 0.419);
+            background-color: rgba(217, 9, 207, 0.419);
         }
 
         .cuadricula {
@@ -64,13 +60,20 @@ la sección inferior en una cuadrícula de 2x2.-->
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             gap: 10px;
+            margin: 10px 10px 10px;
         }
 
         .item {
-            background-color: #ff840062;
+            background-color: white;
+            border-radius: 10px;
             padding: 10px;
             font-size: 24px;
             text-align: center;
+            height: 50px;
+        }
+
+        body {
+            filter: invert(0.8);
         }
     </style>
 </body>
